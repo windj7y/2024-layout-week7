@@ -1,0 +1,26 @@
+.banner {
+  height: 787px;
+  background: url(../images/home-header.png) no-repeat center / cover;
+
+  @include pad {
+    background-image: url(../images/home-header-sm.png);
+  }
+
+  @include mobile {
+    height: 396px;
+  }
+}
+
+.bg {
+  height: 608px;
+  background: url(../images/index-bg.png) no-repeat center / cover;
+
+  @include pad {
+    height: 960px;
+    background-image: url(../images/index-bg-sm.png);
+  }
+
+  @include mobile {
+    height: 820px;
+  }
+}

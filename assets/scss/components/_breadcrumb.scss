@@ -1,0 +1,13 @@
+.breadcrumb {
+  display: flex;
+
+  &-item:not(:last-child) {
+    display: flex;
+
+    &::after {
+      content: '/';
+      color: $black;
+      padding: 0 4px;
+    }
+  }
+}

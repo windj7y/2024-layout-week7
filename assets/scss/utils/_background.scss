@@ -1,0 +1,17 @@
+.bg- {
+  &primary {
+    background: $primary;
+  }
+
+  &secondary {
+    background: $secondary;
+  }
+
+  &pink {
+    background: $pink;
+  }
+
+  &white {
+    background: $white;
+  }
+}

@@ -1,0 +1,51 @@
+.flex- {
+  &column {
+    flex-direction: column;
+  }
+
+  &wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.justify-content- {
+  &center {
+    justify-content: center;
+  }
+
+  &between {
+    justify-content: space-between;
+  }
+}
+
+.align-items- {
+  &center {
+    align-items: center;
+  }
+
+  &end {
+    align-items: flex-end;
+  }
+}
+
+@include pad {
+  .flex-md-column {
+    flex-direction: column;
+  }
+
+  .ailgn-items-md- {
+    &center {
+      align-items: center;
+    }
+  }
+}
+
+@include mobile {
+  .flex-sm-column {
+    flex-direction: column;
+  }
+
+  .ailgn-items-sm-start {
+    align-items: flex-start;
+  }
+}

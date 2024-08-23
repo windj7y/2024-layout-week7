@@ -1,0 +1,59 @@
+$primary: #AA0601;
+$secondary: #650300;
+$light: #DEE2E6;
+$light-100: #DCDCDC;
+$light-200: #F2F2F2;
+$dark: #212529;
+$gray: #707070;
+$gray-100: #555555;
+$white: #FFF;
+$black: #000;
+$pink: #FBF2F2;
+$red: #9F1213;
+$yellow: #FFFF82;
+
+$font-size: 16px;
+$font-sizes: (
+  1: 4,
+  2: 3,
+  3: 2.625,
+  4: 2.25,
+  5: 2,
+  6: 1.5,
+  7: 1.25,
+  8: 1,
+  9: .875 
+);
+
+$spaces: (0, 4, 8, 12, 16, 24, 32, 40, 48, 60, 64, 80, 96, 124);
+$dimensions: (
+  'm': 'margin',
+  'p': 'padding',
+);
+
+$directions: (
+  't': 'top', 
+  'b': 'bottom', 
+  'l': 'left', 
+  'r': 'right',
+);
+
+$gutter: 24px;
+
+$breakpoints: (
+  'md': 992px,
+  'sm': 767px,
+);
+
+$cols: (
+  2: 16.66667%,
+  3: 25%,
+  4: 33.33333%,
+  5: 41.66667%,
+  6: 50%,
+  7: 58.33333%,
+  8: 66.66667%,
+  9: 75%,
+  10: 83.333333%,
+  12: 100%
+);

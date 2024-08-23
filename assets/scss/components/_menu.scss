@@ -1,0 +1,35 @@
+.menu {
+  display: flex;
+
+  &-item {
+    width: 33.3333%;
+    border: 1px solid $light-100;
+  }
+
+  &-link {
+    color: $black;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    padding: 24px 0 16px;
+    border-bottom: 8px solid transparent;
+
+    &:hover {
+      border-bottom: 8px solid $primary;
+    }
+
+    &.active {
+      border-bottom: 8px solid $primary;
+    }
+
+    @include pad {
+      font-size: 24px;
+      padding: 16px 0 8px;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}

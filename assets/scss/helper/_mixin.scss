@@ -1,0 +1,23 @@
+@mixin get-col($width) {
+  width: $width;
+  padding-left: calc($gutter / 2);
+  padding-right: calc($gutter / 2);
+}
+
+@mixin pad {
+  @media (max-width: map-get($breakpoints, 'md')) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: map-get($breakpoints, 'sm')) {
+    @content;
+  }
+}
+
+@mixin picture-replace {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}

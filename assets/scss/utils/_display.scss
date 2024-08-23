@@ -1,0 +1,37 @@
+.d- {
+  &block {
+    display: block;
+  }
+
+  &flex {
+    display: flex;
+  }
+
+  &none {
+    display: none;
+  }
+}
+
+@include pad {
+  .d-md- {
+    &inline {
+      display: inline;
+    }
+
+    &none {
+      display: none;
+    }
+  }
+}
+
+@include mobile {
+  .d-sm- {
+    &block {
+      display: block;
+    }
+
+    &none {
+      display: none;
+    }
+  }
+}

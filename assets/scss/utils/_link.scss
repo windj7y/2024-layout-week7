@@ -1,0 +1,51 @@
+.link {
+  color: $white;
+
+  &:hover {
+    color: $yellow;
+  }
+
+  &-primary {
+    color: $primary;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  &-secondary {
+    color: $secondary;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &-black {
+    color: $black;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+
+  &-gray-100 {
+    color: $gray-100;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.link-icon {
+  &:hover {
+    box-shadow: 0px 0px 15px 2px $white;
+  }
+}
+
+.link-opacity {
+  &:hover {
+    opacity: 0.5;
+  }
+}

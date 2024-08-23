@@ -1,0 +1,14 @@
+.palette {
+  display: flex;
+
+  &-item {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: #5F3E2D;
+
+    &:nth-child(2) {
+      background: #B75929;
+    }
+  }
+}

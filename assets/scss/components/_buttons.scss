@@ -1,0 +1,27 @@
+.btn {
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 16px;
+  border: none;
+
+  &-primary {
+    background: $primary;
+    color: $white;
+
+    &:hover {
+      background: $secondary;
+    }
+  }
+
+  &-black {
+    background: $black;
+    color: $white;
+
+    &:hover {
+      background: $primary;
+    }
+  }
+
+  &-sm {
+    padding: 6px 12px;
+  }
+}

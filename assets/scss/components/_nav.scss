@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+
+  &-link {
+    color: $white;
+    padding: 12px 24px;
+
+    &:hover {
+      color: $yellow;
+    }
+
+    @include pad {
+      padding: 8px 24px;
+    }
+
+    @include mobile {
+      padding: 12px;
+    }
+  }
+
+  &-item:first-child .nav-link {
+    padding-left: 0;
+
+    @include mobile {
+      padding-left: 12px;
+    }
+  }
+}

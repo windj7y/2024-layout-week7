@@ -1,0 +1,15 @@
+.object-fit-cover {
+  object-fit: cover;
+}
+
+@include pad {
+  .object-fit-md-cover {
+    object-fit: cover;
+  }
+}
+
+@include mobile {
+  .object-fit-sm-cover {
+    object-fit: cover;
+  }
+}

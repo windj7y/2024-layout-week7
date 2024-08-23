@@ -1,0 +1,25 @@
+.text- {
+  &primary {
+    color: $primary;
+  }
+
+  &secondary {
+    color: $secondary;
+  }
+
+  &white {
+    color: $white;
+  }
+
+  &dark {
+    color: $dark;
+  }
+
+  &gray {
+    color: $gray;
+  }
+
+  &gray-100 {
+    color: $gray-100;
+  }
+}

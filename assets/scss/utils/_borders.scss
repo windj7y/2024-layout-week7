@@ -1,0 +1,29 @@
+.border- {
+  &1 {
+    border: 1px solid $light;
+  }
+
+  &left-1 {
+    border-left: 8px solid $light; 
+  }
+
+  &bottom-1 {
+    border-bottom: 1px solid $light;
+  }
+
+  &white {
+    border-color: $white;
+  }
+
+  &gray {
+    border-color: $gray;
+  }
+
+  &red {
+    border-color: $red;
+  }
+}
+
+.rounded {
+  border-radius: 4px;
+}

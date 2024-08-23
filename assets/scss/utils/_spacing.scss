@@ -1,0 +1,77 @@
+@each $dim in $dimensions {
+  //迴圈四個方向
+  @each $dir in $directions {
+    @each $value in $spaces {
+      .#{nth($dim,1)}#{nth($dir,1)}-#{$value} {
+        #{nth($dim,2)}-#{nth($dir,2)}: #{$value + 'px'};
+      }
+    }
+  }
+}
+
+@each $value in $spaces {
+  .py-#{$value} {
+    padding-top:  #{$value + 'px'};
+    padding-bottom:  #{$value + 'px'};
+  }
+}
+
+@each $value in $spaces {
+  .px-#{$value} {
+    padding-left:  #{$value + 'px'};
+    padding-right:  #{$value + 'px'};
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (max-width: $width) {
+    @each $dim in $dimensions {
+      //迴圈四個方向
+      @each $dir in $directions {
+        @each $value in $spaces {
+          .#{nth($dim,1)}#{nth($dir,1)}-#{$breakpoint}-#{$value} {
+            #{nth($dim,2)}-#{nth($dir,2)}: #{$value + 'px'};
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (max-width: $width) {
+    @each $value in $spaces {
+      .py-#{$breakpoint}-#{$value} {
+        padding-top:  #{$value + 'px'};
+        padding-bottom:  #{$value + 'px'};
+      }
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (max-width: $width) {
+    @each $value in $spaces {
+      .px-#{$breakpoint}-#{$value} {
+        padding-left:  #{$value + 'px'};
+        padding-right:  #{$value + 'px'};
+      }
+    }
+  }
+}
+
+@include mobile {
+  .p-sm- {
+    &0 {
+      padding: 0;
+    }
+
+    &16 {
+      padding: 16px;
+    }
+  }
+}
+
+.mt-auto {
+  margin-top: auto;
+}

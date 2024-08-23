@@ -1,0 +1,43 @@
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-link {
+    color: $white;
+    font-size: 20px;
+    padding: 0 32px;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  &-item:last-child .header-nav-link {
+    padding-right: 0;
+  }
+}
+
+@include mobile {
+  .header-nav {
+    width: 100%;
+    text-align: center;
+
+    &-item {
+      width: 50%;
+    }
+
+    &-link {
+      font-size: 16px;
+      padding: 12px 0;
+      border: 1px solid $white;
+    }
+  }
+}
+
+.logo {
+  width: 80px;
+  height: 48px;
+  background: url(../images/logo-white.png) no-repeat;
+  background-size: contain;
+  @include picture-replace;
+}

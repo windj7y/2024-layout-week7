@@ -1,0 +1,14 @@
+.icon {
+  width: 48px;
+  height: 48px;
+
+  @include pad {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include mobile {
+    width: 24px;
+    height: 24px;
+  }
+}

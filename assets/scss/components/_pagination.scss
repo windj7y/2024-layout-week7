@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+}
+
+.page {
+  &-link {
+    color: $gray-100;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    padding: 12px 16px;
+    border: 1px solid $gray-100;
+  
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+  
+    &.active {
+      background: $black;
+      color: $white;
+    }
+
+    @include mobile {
+      font-size: 16px;
+      padding: 12px 14px;
+    }
+  }
+
+  &-item:not(:first-child) .page-link {
+    margin-left: -1px;
+  }
+}
+
+.next-page {
+  background: $light-200;
+}
